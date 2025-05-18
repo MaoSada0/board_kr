@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.js": "/board_kr/static/js/main.2344c102.js",
+    "static/media/ShapeTool.less": "/board_kr/static/media/ShapeTool.a4b08373ac4f4f180f31.less",
+    "static/media/TextTool.less": "/board_kr/static/media/TextTool.651a984180a7ce25cce4.less",
+    "static/media/StrokeTool.less": "/board_kr/static/media/StrokeTool.084075f782e35195ecb1.less",
+    "static/media/Toolbar.less": "/board_kr/static/media/Toolbar.55315299439541215b33.less",
+    "static/media/SketchPad.less": "/board_kr/static/media/SketchPad.89888c5e63970260020d.less",
+    "static/media/index.less": "/board_kr/static/media/index.34f4da8571a00f5af75b.less",
+    "index.html": "/board_kr/index.html",
+    "main.2344c102.js.map": "/board_kr/static/js/main.2344c102.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.2344c102.js"
+  ]
+}
