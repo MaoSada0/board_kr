@@ -1,45 +1,41 @@
-@import './theme';
+@import 'theme';
 
-@textTool-prefix: ~'@{prefix}-textTool';
+@shapeTool-prefix: ~'@{prefix}-shapeTool';
 
-.@{textTool-prefix}-strokeMenu {
+.@{shapeTool-prefix}-strokeMenu {
   background: rgba(255,255,255,1);
   box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
   border-radius: 4px;
 
-  .@{textTool-prefix}-colorAndSize {
+  .@{shapeTool-prefix}-colorAndSize {
     display: flex;
     align-items: center;
     padding: 10px;
   }
 
-  .@{textTool-prefix}-textSizeSelector {
+  .@{shapeTool-prefix}-strokeSelector {
     display: flex;
     align-items: center;
   
     & > div {
-      font-size: 12px;
+      background: rgba(238,238,238,1);
+      border-radius: 50%;
       margin-right: 8px;
       cursor: pointer;
-
-      &:first-child {
-        font-size: 10px;
-      }
   
       &:last-child {
         margin-right: 0;
-        font-size: 14px;
       }
     }
   }
 
-  .@{textTool-prefix}-shape {
+  .@{shapeTool-prefix}-shape {
     display: flex;
     align-items: center;
     border-bottom: 1px dashed #eee;
     padding: 0 5px;
 
-    .@{textTool-prefix}-shapeItem {
+    .@{shapeTool-prefix}-shapeItem {
       width: 25px;
       height: 35px;
       margin-right: 5px;
@@ -48,13 +44,13 @@
       justify-content: center;
       cursor: pointer;
 
-      .@{textTool-prefix}-rect {
+      .@{shapeTool-prefix}-rect {
         width: 15px;
         height: 15px;
         border: 1px solid #ccc;
       }
 
-      .@{textTool-prefix}-circle {
+      .@{shapeTool-prefix}-circle {
         width: 15px;
         height: 15px;
         border: 1px solid #ccc;
@@ -63,7 +59,7 @@
     }
   }
 
-  .@{textTool-prefix}-split {
+  .@{shapeTool-prefix}-split {
     width: 1px;
     height: 20px;
     background: #E9E9E9;
@@ -72,11 +68,11 @@
   }
 }
 
-.@{textTool-prefix}-palette {
+.@{shapeTool-prefix}-palette {
   display: flex;
   align-items: center;
 
-  .@{textTool-prefix}-color {
+  .@{shapeTool-prefix}-color {
     width:18px;
     height:18px;
     border: 1px solid #E9E9E9;
@@ -97,12 +93,12 @@
       top: 2px;
     }
 
-    .@{textTool-prefix}-fill {
+    .@{shapeTool-prefix}-fill {
       width: 14px;
       height: 14px;
     }
 
-    .@{textTool-prefix}-opacityColor {
+    .@{shapeTool-prefix}-opacityColor {
       position: absolute;
       top: -4px;
       left: 7px;
@@ -114,6 +110,36 @@
 
     &:last-child {
       margin-right: 0;
+    }
+  }
+}
+
+.@{shapeTool-prefix}-shape {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px dashed #eee;
+  padding: 0 5px;
+
+  .@{shapeTool-prefix}-shapeItem {
+    width: 25px;
+    height: 35px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    .@{shapeTool-prefix}-rect {
+      width: 15px;
+      height: 15px;
+      border: 1px solid #ccc;
+    }
+
+    .@{shapeTool-prefix}-circle {
+      width: 15px;
+      height: 15px;
+      border: 1px solid #ccc;
+      border-radius: 50%;
     }
   }
 }

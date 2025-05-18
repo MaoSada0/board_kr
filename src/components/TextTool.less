@@ -1,41 +1,45 @@
-@import './theme';
+@import 'theme';
 
-@shapeTool-prefix: ~'@{prefix}-shapeTool';
+@textTool-prefix: ~'@{prefix}-textTool';
 
-.@{shapeTool-prefix}-strokeMenu {
+.@{textTool-prefix}-strokeMenu {
   background: rgba(255,255,255,1);
   box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
   border-radius: 4px;
 
-  .@{shapeTool-prefix}-colorAndSize {
+  .@{textTool-prefix}-colorAndSize {
     display: flex;
     align-items: center;
     padding: 10px;
   }
 
-  .@{shapeTool-prefix}-strokeSelector {
+  .@{textTool-prefix}-textSizeSelector {
     display: flex;
     align-items: center;
   
     & > div {
-      background: rgba(238,238,238,1);
-      border-radius: 50%;
+      font-size: 12px;
       margin-right: 8px;
       cursor: pointer;
+
+      &:first-child {
+        font-size: 10px;
+      }
   
       &:last-child {
         margin-right: 0;
+        font-size: 14px;
       }
     }
   }
 
-  .@{shapeTool-prefix}-shape {
+  .@{textTool-prefix}-shape {
     display: flex;
     align-items: center;
     border-bottom: 1px dashed #eee;
     padding: 0 5px;
 
-    .@{shapeTool-prefix}-shapeItem {
+    .@{textTool-prefix}-shapeItem {
       width: 25px;
       height: 35px;
       margin-right: 5px;
@@ -44,13 +48,13 @@
       justify-content: center;
       cursor: pointer;
 
-      .@{shapeTool-prefix}-rect {
+      .@{textTool-prefix}-rect {
         width: 15px;
         height: 15px;
         border: 1px solid #ccc;
       }
 
-      .@{shapeTool-prefix}-circle {
+      .@{textTool-prefix}-circle {
         width: 15px;
         height: 15px;
         border: 1px solid #ccc;
@@ -59,7 +63,7 @@
     }
   }
 
-  .@{shapeTool-prefix}-split {
+  .@{textTool-prefix}-split {
     width: 1px;
     height: 20px;
     background: #E9E9E9;
@@ -68,11 +72,11 @@
   }
 }
 
-.@{shapeTool-prefix}-palette {
+.@{textTool-prefix}-palette {
   display: flex;
   align-items: center;
 
-  .@{shapeTool-prefix}-color {
+  .@{textTool-prefix}-color {
     width:18px;
     height:18px;
     border: 1px solid #E9E9E9;
@@ -93,12 +97,12 @@
       top: 2px;
     }
 
-    .@{shapeTool-prefix}-fill {
+    .@{textTool-prefix}-fill {
       width: 14px;
       height: 14px;
     }
 
-    .@{shapeTool-prefix}-opacityColor {
+    .@{textTool-prefix}-opacityColor {
       position: absolute;
       top: -4px;
       left: 7px;
@@ -110,36 +114,6 @@
 
     &:last-child {
       margin-right: 0;
-    }
-  }
-}
-
-.@{shapeTool-prefix}-shape {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px dashed #eee;
-  padding: 0 5px;
-
-  .@{shapeTool-prefix}-shapeItem {
-    width: 25px;
-    height: 35px;
-    margin-right: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-
-    .@{shapeTool-prefix}-rect {
-      width: 15px;
-      height: 15px;
-      border: 1px solid #ccc;
-    }
-
-    .@{shapeTool-prefix}-circle {
-      width: 15px;
-      height: 15px;
-      border: 1px solid #ccc;
-      border-radius: 50%;
     }
   }
 }
